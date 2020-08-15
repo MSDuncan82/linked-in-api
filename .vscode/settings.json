@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/mike/anaconda3/envs/linked-in-scraper/bin/python"
+    "python.pythonPath": "/home/mike/anaconda3/envs/linked-in-scraper/bin/python",
+    "workbench.colorTheme": "Default Dark+"
 }

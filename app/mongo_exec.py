@@ -2,12 +2,15 @@ from pymongo import MongoClient
 
 def upload_profile(user_id, profile_info):
 
-    client = MongoClient('mongodb://localhost:27020')
+    # host = 'localhost'
+    host = 'mongo'
+    client = MongoClient(f'mongodb://{host}:27017')
 
     db = client.connections
     col = db['connections']
 
     col.update({'_id':user_id}, {"$set": profile_info}, upsert=True)
+    # col.insert_one(dict(_id=user_id, **profile_info))
 
     return col
 
