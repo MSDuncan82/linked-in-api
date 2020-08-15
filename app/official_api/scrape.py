@@ -1,0 +1,11 @@
+import json
+import dotenv
+import requests
+dotenv.load_dotenv
+
+access_token = "AQXkc97q1AA8Nm5opPOL-QgGvCc6UFU70Mgnxr5fI_T0yjsbtuQGE6YqgkrNIQ0sJLL09HHsxeKj-gMJiB4Rs2gFUbf_vxLw5Rapwnefa6nL1Gos0ud2iY1jT1hBpPOUXtEwkJAafaX6jybYPMw0S4Z8MWqshdH6bxdZ4j0JOqL6p4OuK7Eu9oyiUUBMqXj5YD1KSRDSwUjuatdnwN-peZw4URwKpYLywnI8gKyXMSBaXGRann_Lk8tNZa2MxuRM_Wwnis9GffYKyYQPh1kWiIA98W1OrHYZxDLMGy4cmSt4zzctBXma8x0IVhpcdy4red-MsN9KP-bxWjaKMpefJ_pUQRmh1g"
+
+params = {'oauth2_access_token': access_token}
+response = requests.get('https://api.linkedin.com/v2/me', params=params)
+
+import ipdb; ipdb.set_trace()
